@@ -1,63 +1,174 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Maria Molina's Home</title>
-        <style> 
-        #navbar {
-            background-color: rgb(9, 240, 228);
-                }
-                
-           h1  { 
-            background-color: rgb(247, 3, 125);
-                }
-            #home{
-                color: rgb(247, 5, 90);
-            }
-            #about{
-                color: rgb(247,5,90);
-            }
-           #contact{
-                color: rgb(247,5,90);
-            }
-            a{
-                color: rgb(245, 143, 10);
-            }
-            body{
-                background-color: rgb(10, 255, 116);
-            }
-        </style>
-    </head>
-    <body>
-<div id= "navbar">
-   <ul> 
-       <li id="home"><a href="https://www.khanacademy.org/computer-programming/maria-molinas-home/6533012762787840">Home</a></li>
-     
-       <li id="about"><a href="https://docs.google.com/document/d/1tj6vHRw7ww-Ghh1hm0iMQ8TA_xHFB818XfoXqyHUlrs/edit">About</a></li>
-   
-       <li id="contact"><a href="https://docs.google.com/a/alphapublicschools.org/document/d/10G2Y5jaZsQcEVDfAEY5Xiz8T3UjYp2lUBehxDiSBwTo/edit?usp=docslist_api">Contact</a></li>
- 
-  </ul>
-    </div>
-    <h1> 
-        Maria Molina
-     </h1>
-     
-        <p> Founding ninth grade student at Alpha Cindy Avitia High School and lover of dogs.
-        </p>
-         <img src ="https://www.kasandbox.org/programming-images/animals/dog_sleeping-puppy.png" width="30%" alt="puppy sleeping">
-     
-         <img src ="https://www.kasandbox.org/programming-images/animals/retriever.png" width="30%" alt="golden retriever"> 
-         
-         <img src="https://www.kasandbox.org/programming-images/animals/dogs_collies.png" width="30%" alt="dogs playing and jumping(collies)">
-        
-     <h1>Where I am From</h1>
-         <p>I was born in this amazing state, California. I was born in San Jose. San Jose gives you many good opportunities. One is many of the well known companies like google,yahoo, etc are here in San Jose. If you study hard enough then you could join those companies and get paid very well. I have never moved to another city ,since I was born. I was born in Bascom Hospital to be exact. Basically I was born in South side San Jose and raised in East side San Jose. I am 14; born on 9/25/2001. </p>
- 
- <h1>What I Do Now</h1>
- <p>I currently attend Alpha Cindy Avitia highschool. I am currently a freshman. I am working to go to college. What I am doing to go to college is stay after school to finish any work. I finish all my class work. I work my hardest to get good grades. I study before all my tests to get a good grade on it. If I need some help on something I ask teachers. Basically all I do now is study and do homework all day.</p>
-         
-        
+<head>
+  <!-- TODO: Update Title -->
+  <title>Maria's Web Page</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 
-    </body>
+
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: cursive;
+      background-color:#f6a793;
+    }
+    
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 900px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#d42954;
+      height:110%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:110%;
+      background-color: #059D8E;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:#abf42a;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: #abf42a;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: #F26101;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("https://abcfapps.blob.core.windows.net/shadowhunters/2015/282/e4faf78d-ea00-4580-af4e-d0fde26361e0.gif");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 45%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+
+
+        </ul>
+        
+    </div>
+    <style>
+    
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+}
+</style>
+
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                    <li><a href="./portfolio.html">Fish Tank</a></li>
+                    <li><a href="./portfolio.html">Dinner Plate</a></li>
+                    <li><a href="./portfolio.html">Ad Design</a></li>
+                    <li><a href="./portfolio.html">Quarter 1 Math Challenge</a></li>
+                    <li><a href="./portfolio.html"> Quarter 2 Math Challenge</a></li>
+                     <li><a href="./portfolio.html"> Quarter 3 Math Challenge</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="main-page">
+            <div class="image-container"></div>
+            
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Maria's Homepage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">My Background</h2>
+                  <p class="text-info">Born and raised in San Jose California. I am 14; born on 9/25/2001. I really love to watch this show called shadowhunters. I really like to create things like build things with my own hands. Kind of like arts and crafts or diys. I am the oldest child and my brother is five years old. I live with my mom and brother. I enjoy hanging out with friends when I have the time to do it. 
+            </div>
+            <div class="right-panel">
+                <h2 class="sub-title">What I Do Now</h2>
+                <p class="text-info"></p>I spend most of my time doing homework and focusing on school. I am currently attending a very small high school where there is a diversity of different students. This school gives us an opportunity to provide us with very awesome classes this including computer science, history, biology, etc. Life is very simple right now, just studying and working to get great grades to have a future.
+            </div>
+
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
+        </div>
+    </div>
+    
+    
+
+</body>
 </html>
