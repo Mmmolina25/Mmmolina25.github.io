@@ -23,10 +23,10 @@
     .navbar {
       display:block;
       background-color:#3ed0bd;
-      height:80px;
+      height:10px;
       margin:0 auto;
       min-width:600px;
-      max-width:800px;
+      max-width:100px;
     }
 
     .navigation li {
@@ -57,7 +57,7 @@
       min-width:600px;
       max-width:800px;
       margin:0 auto;
-      background-color: blue;
+      background-color: #f30c53;
       height:50px;
       clear:both;
     }
